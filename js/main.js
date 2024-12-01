@@ -1,5 +1,12 @@
 const databaseURL = "https://landing-d867a-default-rtdb.firebaseio.com/coleccion.json";
 
+const mapaFAvorito = {
+    "Historia Alternativa": 0,
+    "Relieve exagerado": 0,
+    "Mapa Continental": 0,
+    "Mapa Mundi": 0
+};
+
 let sendData = () => {
     const formData = new FormData(form);
     const data = Object.fromEntries(formData.entries());

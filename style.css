@@ -22,10 +22,127 @@ CSS STRUCTURE:
 2. GENERAL TYPOGRAPHY
 
 --------------------------------------------------------------*/
+
+.container-fluid {
+  padding: 0 5vw;
+}
+
+.navbar {
+  padding: 0;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+  background-color: black;
+}
+
+.navbar-nav li {
+  position: relative;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.navbar-nav li a {
+  padding: 30px 30px !important;
+}
+
+.navbar-nav li::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background-color: rgb(101, 99, 105);
+  transition: all 0.2s ease;
+  transform: translateX(-50%);
+}
+
+.navbar-nav li:hover::after {
+  width: 100%;
+}
+
+.navbar-nav li:hover>a {
+  color: rgb(101, 99, 105);
+  transition: color 0.2s ease;
+}
+
+.navbar-nav li.active::after {
+  width: 100%;
+}
+
+.navbar-nav li.active>a {
+  color: rgb(101, 99, 105) !important;
+}
+
+.navbar-nav .nav-item a {
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.navbar-toggler {
+  border: none;
+ background-color: white !important;
+}
+
+
+
+a.navbar-brand{
+  color: white !important;
+}
+
+
+
+h1, h2, h3, h4, h5, h6, h7, p, a{
+  color: white;
+}
+
+svg{
+  color:white;
+}
+
+#billboard{
+  background-image: url("../images/maps/mapa_mundi.JPG") !important;
+  background-color: rgb(39, 39, 39) !important; 
+  background-blend-mode: overlay  !important;
+  
+}
+
+#segundoPanel{
+  background-image: url("../images/maps/mapa_volga.JPG") !important;
+  background-color: rgb(67, 66, 66) !important;
+  background-blend-mode: overlay  !important;
+  background-position: center !important;
+}
+
+#contenedorSegundo{
+  background-color: black !important;
+}
+
+#panelContenedorSegundo{
+  background-color: black !important;
+}
+
+#holderImagenAlternativa{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#imagenAlternativa{
+  
+}
+
 body {
+  background-color: #161717 !important;
   --heading-font: "Marcellus", Roboto, sans-serif;
   --heading-font-weight: 400;
-  --heading-color: #111;
+  --heading-color: white;
   --heading-line-height: 1.24;
 
   --swiper-theme-color: #8C907E;
@@ -63,9 +180,6 @@ body {
   letter-spacing: 0.03rem;
 }
 
-.TituloPrincipal{
-  color: black;
-}
 
 h1,
 .h1,
