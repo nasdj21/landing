@@ -27,6 +27,10 @@ CSS STRUCTURE:
   padding: 0 5vw;
 }
 
+#iconoNG{
+  max-width: 30px;
+}
+
 .navbar {
   padding: 0;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
@@ -52,7 +56,7 @@ CSS STRUCTURE:
   left: 50%;
   width: 0;
   height: 3px;
-  background-color: rgb(101, 99, 105);
+  background-color: #FFCE00;
   transition: all 0.2s ease;
   transform: translateX(-50%);
 }
@@ -62,7 +66,7 @@ CSS STRUCTURE:
 }
 
 .navbar-nav li:hover>a {
-  color: rgb(101, 99, 105);
+  color: #FFCE00;
   transition: color 0.2s ease;
 }
 
@@ -71,7 +75,7 @@ CSS STRUCTURE:
 }
 
 .navbar-nav li.active>a {
-  color: rgb(101, 99, 105) !important;
+  color: #FFCE00 !important;
 }
 
 .navbar-nav .nav-item a {
@@ -91,6 +95,10 @@ CSS STRUCTURE:
 
 
 
+.border-animation-left .item-anchor::after {
+  background: #FFCE00 !important;
+}
+
 a.navbar-brand{
   color: white !important;
 }
@@ -101,6 +109,10 @@ h1, h2, h3, h4, h5, h6, h7, p, a{
   color: white;
 }
 
+
+
+
+
 svg{
   color:white;
 }
@@ -110,6 +122,10 @@ svg{
   background-color: rgb(39, 39, 39) !important; 
   background-blend-mode: overlay  !important;
   
+}
+
+.btn-link:hover{
+  color: #FFCE00 !important;
 }
 
 #segundoPanel{
@@ -134,9 +150,78 @@ svg{
 
 }
 
-#imagenAlternativa{
-  
+#contacto{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 36px 36px 0 0;
+  background-color: rgb(67, 66, 66);
+  background-blend-mode: overlay !important;
 }
+
+.contenedor-form{
+  width: 95%;
+  padding: 55px;
+}
+
+#form input{
+  font-size: 1rem;
+  color:black;
+  padding: 10px;
+}
+
+#botonFormulario{
+  
+  border-color: #FFCE00 ;
+}
+
+.cont-regiones{
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  padding-right: 0px !important;
+  align-items: center;
+}
+
+
+
+.resultados-container{
+  margin: 20px auto;
+  max-width: 800px;
+  max-height: 520px;
+  padding: 40px;
+  background-color: rgb(36, 36, 36);
+  border: 1px solid #FFCE00 ;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px white;
+}
+
+.result-card p strong{
+  color: #FFCE00 !important;
+}
+
+#resultadosRegion h3{
+  font-size: 1.6rem !important;
+}
+
+.results-card{
+  color:white;
+  padding: 10px 0;
+}
+
+
+
+@media (max-width:1370px){ /*Cuando lo veo desde celular */
+  #contacto{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.swiper-pagination-bullet{
+  background-color: white;
+}
+  
 
 body {
   background-color: #161717 !important;
